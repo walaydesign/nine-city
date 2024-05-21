@@ -22,11 +22,15 @@ var swiperMuseum = new Swiper(".museum_swiper", {
         prevEl: ".swiper-prev",
     },
     speed: 800,
+    autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+    },
     on: {
         slideChangeTransitionStart: function() {
-            if($(".swiper-slide-active").find(".museum_swiper_item").hasClass("pic-right")) {
+            if($(".museum_swiper").find(".swiper-slide-active").find(".museum_swiper_item").hasClass("pic-right")) {
                 $(".museum_swiper").find(".swiper_nav").removeClass("leftside").addClass("rightside");
-            }else if($(".swiper-slide-active").find(".museum_swiper_item").hasClass("pic-left")) {
+            }else if($(".museum_swiper").find(".swiper-slide-active").find(".museum_swiper_item").hasClass("pic-left")) {
                 $(".museum_swiper").find(".swiper_nav").removeClass("rightside").addClass("leftside");
             }
         },
@@ -43,6 +47,10 @@ var swiperNature = new Swiper(".nature_swiper", {
         el: ".swiper-pagination",
         clickable: true,
     },
+    autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+    },
     speed: 800,
 })
 
@@ -53,6 +61,10 @@ var swiperSave = new Swiper(".save_swiper", {
         prevEl: ".swiper-prev",
     },
     speed: 800,
+    autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+    },
 })
 
 var swiperLife = new Swiper(".life_swiper", {
@@ -66,6 +78,10 @@ var swiperLife = new Swiper(".life_swiper", {
         clickable: true,
     },
     speed: 800,
+    autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+    },
 })
 
 var swiperTransportation = new Swiper(".transportation_swiper", {
@@ -97,6 +113,16 @@ var swiperSchool = new Swiper(".school_swiper", {
         clickable: true,
     },
     speed: 800,
+    autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+    },
+    on: {
+        slideChangeTransitionStart: function() {
+            let index = $(".school_swiper").find(".swiper-slide-active").index();
+            $(".school_text_tab_item").eq(index).addClass("active").siblings(".school_text_tab_item").removeClass("active");
+        },
+    }
 })
 
 $(".school_text_tab_item").click(function(){
@@ -104,3 +130,32 @@ $(".school_text_tab_item").click(function(){
     let li_index = $(this).index();
     swiperSchool.slideTo(li_index, 1000, true);
 })
+
+var swiperClassic = new Swiper(".classic_swiper", {
+    slidesPerView: 1,
+    navigation: {
+        nextEl: ".classic_swiper-next",
+        prevEl: ".classic_swiper-prev",
+    },
+    speed: 800,
+    autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+    },
+})
+
+function sendEmail(){
+    Email.send({
+        SecureToken: "8207c7d7-4a6c-4797-870d-d16ee71023ce",
+        // To : "ryanlin9001@gmail.com, zhulixdesign@gmail.com, zhuli705098@gmail.com",
+        To : "yl301114@gmail.com",
+        From : "walayydesign@gmail.com",
+        Subject : "玖都預約賞屋",
+        Body : "貴賓稱謂:" + document.getElementById("name").value
+                + "<br>聯絡電話:" + document.getElementById("phone").value
+                + "<br>Email信箱:" + document.getElementById("email").value
+                + "<br>聯繫時段:" + document.getElementById("time_from").value + "時-" + document.getElementById("time_to").value + "時"
+    }).then(
+        message => alert("感謝您的來信！我們很快就會和您聯繫！"),
+    );
+}
