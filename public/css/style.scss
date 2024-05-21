@@ -242,7 +242,7 @@ main {
         h3 {
             letter-spacing: 0.1em;
             font-size: 22px;
-            font-weight: 300;
+            font-weight: 200;
             margin: 0 0 0 15px;
         }
         p {
@@ -777,6 +777,711 @@ main {
             &_square {
                 width: 4px;
                 height: 4px;
+            }
+        }
+    }
+}
+
+.nature {
+    margin-bottom: 160px;
+    &_inner {
+        position: relative;
+    }
+    &_swiper {
+        &_item {
+            align-items: flex-end;
+        }
+        &_text {
+            width: 35%;
+            padding-bottom: 15px;
+            &_inner {
+                width: fit-content;
+                margin: 0 auto;
+                padding-top: 40px;
+                position: relative;
+                &::before {
+                    position: absolute;
+                    content: "";
+                    width: 80px;
+                    height: 4px;
+                    background-color: $primary-500;
+                    left: 50%;
+                    top: 0;
+                    transform: translateX(-50%);
+                }
+            }
+        }
+        h3 {
+            font-size: 34px;
+            letter-spacing: 0.3em;
+            font-weight: 700;
+            color: $secondary-500;
+            font-family: $font-serif;
+            margin-bottom: 15px;
+        }
+        p {
+            font-size: 19px;
+            font-weight: 300;
+            margin: 0;
+            text-align: left;
+        }
+        &_pic {
+            width: 65%;
+            padding: 0 !important;
+        }
+        .swiper_nav {
+            width: 65%;
+            &_arrow {
+                padding-left: 20px;
+                padding-right: 0;
+            }
+        }
+    }
+    &_title {
+        width: 35%;
+        position: absolute;
+        right: 0;
+        top: -20px;
+        z-index: 5;
+        >img {
+            width: 64%;
+            display: block;
+            margin: 0 auto 40px;
+        }
+        h2 {
+            width: fit-content;
+            position: relative;
+            font-family: $font-serif;
+            color: $secondary-500;
+            font-size: 40px;
+            font-weight: 700;
+            padding: 0 15px 0 20px;
+            margin: 0 auto 30px;
+            line-height: 1.3;
+            letter-spacing: 0.2em;
+            &::before {
+                position: absolute;
+                content: "";
+                width: 6px;
+                height: 100%;
+                background-color: #FFC303;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+            &::after {
+                position: absolute;
+                content: "";
+                width: 6px;
+                height: 100%;
+                background-color: #FFC303;
+                right: 0;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+        p {
+            margin: 0 auto;
+            width: 70%;
+            font-size: 20px;
+            font-weight: 300;
+        }
+    }
+    @media screen and (max-width: 1399px) {
+        >.container {
+            max-width: inherit;
+        }
+    }
+    @media screen and (max-width: 1199px) {
+        margin-bottom: 80px;
+        &_title {
+            width: 100%;
+            position: static;
+            margin-bottom: 50px;
+        }
+        &_swiper {
+            &_item {
+                flex-wrap: wrap;
+            }
+            &_text {
+                width: 100%;
+                order: 1 !important;
+                margin-bottom: 50px;
+                p {
+                    height: 57px;
+                }
+            }
+            &_pic {
+                width: 100%;
+                order: 2 !important;
+            }
+            .swiper_nav {
+                width: 100%;
+            }
+        }
+    }
+    @media screen and (max-width: 575px) {
+        &_title {
+            h2 {
+                font-size: 30px;
+            }
+            p {
+                // width: 68%;
+                font-size: 14px;
+            }
+        }
+        &_swiper {
+            &_text {
+                margin-bottom: 30px;
+                padding-bottom: 0;
+            }
+            .swiper_nav {
+                &_arrow {
+                    padding-left: 10px;
+                    padding-right: 0;
+                }
+            }
+            h3 {
+                font-size: 24px;
+            }
+            p {
+                font-size: 14px;
+                height: 40px;
+            }
+        }
+    }
+}
+
+.life {
+    margin-bottom: 245px;
+    position: relative;
+    &_bird {
+        width: 10%;
+        top: 0;
+        left: 3%;
+        position: absolute;
+    }
+    .museum_text {
+        margin: 0 0 20px;
+    }
+    &_text {
+        >.container {
+            position: relative;
+        }
+    }
+    &_intro {
+        width: fit-content;
+        position: absolute;
+        left: 20px;
+        top: calc(100% + 20px);
+        h4 {
+            color: $secondary-500;
+            font-size: 26px;
+            font-weight: 200;
+            margin: 0;
+            padding: 0 20px;
+        }
+        &_bottom {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        &_line {
+            width: 100%;
+            height: 1px;
+            background-color: $secondary-500;
+            margin: 10px 0;
+            position: relative;
+            &::before {
+                position: absolute;
+                content: "";
+                width: 8px;
+                height: 8px;
+                border-radius: 50%;
+                background-color: $secondary-500;
+                top: 50%;
+                left: 0;
+                transform: translateY(-50%);
+            }
+        }
+    }
+    &_swiper {
+        h3 {
+            text-align: center;
+            font-family: $font-serif;
+            color: $secondary-500;
+            font-size: 27px;
+            font-weight: 700;
+            line-height: 1.6;
+            letter-spacing: 0.08em;
+            position: relative;
+            padding: 40px 0;
+            &::before {
+                position: absolute;
+                content: "";
+                width: 82px;
+                height: 4px;
+                background-color: $primary-500;
+                top: 0;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            &::after {
+                position: absolute;
+                content: "";
+                width: 82px;
+                height: 4px;
+                background-color: $primary-500;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+        &_pic {
+            padding: 0;
+            // margin-top: -83px;
+        }
+        .swiper_nav {
+            width: 70%;
+            margin-left: auto;
+        }
+    }
+    @media screen and (max-width: 1800px) {
+        &_bird {
+            top: 25%;
+        }
+    }
+    @media screen and (max-width: 1199px) {
+        &_intro {
+            position: static;
+            margin-bottom: 30px;
+        }
+    }
+    @media screen and (max-width: 991px) {
+        margin-bottom: 120px;
+        &_bird {
+            width: 27%;
+            top: 8%;
+        }
+        .museum_text {
+            margin: 0 auto 30px;
+        }
+        &_text {
+            >.container {
+                max-width: inherit;
+                padding: 0;
+            }
+        }
+        &_intro {
+            margin-left: auto;
+            margin-bottom: 85px;
+        }
+        &_swiper {
+            &_pic {
+                padding: 0 !important;
+            }
+            .swiper_nav {
+                width: 100%;
+            }
+        }
+        &_pic {
+            >.container {
+                max-width: inherit;
+            }
+        }
+    }
+    @media screen and (max-width: 767px) {
+        &_bird {
+            top: 10%;
+        }
+        &_intro {
+            h4 {
+                font-size: 20px;
+            }
+        }
+        &_swiper {
+            h3 {
+                font-size: 24px;
+                padding: 20px 0;
+                &::before {
+                    width: 40px;
+                    height: 2px;
+                }
+                &::after {
+                    width: 40px;
+                    height: 2px;
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 450px) {
+        &_bird {
+            top: 13%;
+        }
+        &_intro {
+            h4 {
+                font-size: 16px;
+            }
+        }
+    }
+    @media screen and (max-width: 370px) {
+        &_intro {
+            h4 {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+.transportation {
+    margin-bottom: 180px;
+    .museum_text {
+        margin-bottom: 100px;
+    }
+    &_swiper {
+        &_item {
+            width: 100%;
+            padding-bottom: 75%;
+            position: relative;
+            // box-shadow: 1px 1px 5px rgba(0,0,0,0.4);
+            cursor: pointer;
+            >img {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                top: 0;
+                left: 0;
+            }
+            &:hover {
+                .life_swiper_mask {
+                    opacity: 1;
+                }
+            }
+        }
+        &_intro {
+            font-size: 20px;
+            font-weight: 500;
+            color: #665A5A;
+            margin: 45px 0 0;
+            text-align: center;
+            opacity: 0;
+            transition: $transition-common;
+        }
+        &_text {
+            padding: 20px;
+            h4 {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                margin-bottom: 20px;
+                span {
+                    font-size: 34px;
+                    display: block;
+                    color: $secondary-500;
+                    font-family: $font-serif;
+                    font-weight: 700;
+                    letter-spacing: 0.05em;
+                }
+                >img {
+                    width: 2px;
+                    margin: 0 10px;
+                }
+            }
+            p {
+                font-size: 20px;
+                letter-spacing: 0.1em;
+                position: relative;
+                padding-left: 15px;
+                line-height: 1.4;
+                letter-spacing: 0.08em;
+
+                &::before {
+                    position: absolute;
+                    content: "";
+                    width: 4px;
+                    height: 100%;
+                    background-color: $primary-500;
+                    top: 0;
+                    left: 0;
+                }
+            }
+        }
+        .swiper-button-next, .swiper-button-prev {
+            width: 57px;
+            height: 133px;
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin: 0;
+            top: calc((100% - 173px) / 2);
+            transform: translateY(-50%);
+            &::after {
+                display: none;
+            }
+        }
+        .swiper-button-next {
+            background-image: url(../img/tran-next.svg);
+            right: calc(33.3333% - 90px);
+            left: inherit;
+        }
+        .swiper-button-prev {
+            background-image: url(../img/tran-prev.svg);
+            left: calc(33.3333% - 90px);
+        }
+    }
+    @media screen and (max-width: 1350px) {
+        &_swiper {
+            &_text {
+                h4 {
+                    span {
+                        font-size: 28px;
+                    }
+                }
+                p {
+                    font-size: 18px;
+                }
+            }
+            .swiper-button-next, .swiper-button-prev {
+                top: calc((100% - 219px) / 2);
+            }
+        }
+    }
+    @media screen and (max-width: 991px) {
+        margin-bottom: 140px;
+        &_swiper {
+            &_text {
+                padding: 15px;
+                h4 {
+                    line-height: 1.5;
+                    display: block;
+                    margin-bottom: 10px;
+                    span {
+                        font-size: 24px;
+                    }
+                    >img {
+                        display: none;
+                    }
+                }
+                p {
+                    font-size: 16px;
+                    padding-left: 10px;
+                    line-height: 1.6;
+                    &::before {
+                        height: 20px;
+                        width: 2px;
+                        top: 3px;
+                    }
+                }
+            }
+            .swiper-button-next, .swiper-button-prev {
+                width: 30px;
+                height: 50px;
+                top: calc((100% - 256px) / 2);
+            }
+            .swiper-button-next {
+                right: calc(33.3333% - 60px);
+            }
+            .swiper-button-prev {
+                left: calc(33.3333% - 60px);
+            }
+        }
+    }
+    @media screen and (max-width: 767px) {
+        .museum_text {
+            margin-bottom: 50px;
+        }
+        &_swiper {
+            &_text {
+                padding: 10px;
+                h4 {
+                    span {
+                        font-size: 20px;
+                    }
+                }
+                p {
+                    font-size: 14px;
+                }
+            }
+            .swiper-button-next, .swiper-button-prev {
+                top: calc((100% - 224px) / 2);
+            }
+        }
+    }
+    @media screen and (max-width: 450px) {
+        &_swiper {
+            &_text {
+                padding: 5px;
+                h4 {
+                    span {
+                        font-size: 16px;
+                    }
+                }
+                p {
+                    font-size: 12px;
+                }
+            }
+            .swiper-button-next, .swiper-button-prev {
+                top: calc((100% - 199px) / 2);
+            }
+        }
+    }
+}
+
+.school {
+    margin-bottom: 200px;
+    >.container {
+        display: flex;
+    }
+    &_text {
+        width: 35%;
+        &_main {
+            margin-bottom: 50px;
+            padding-top: 20px;
+            h2 {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 15px;
+                span {
+                    font-family: $font-serif;
+                    color: $secondary-500;
+                    font-size: 36px;
+                    font-weight: 700;
+                }
+                img {
+                    width: 3px;
+                    margin: 0 15px;
+                }
+            }
+            p {
+                font-size: 20px;
+                margin: 0;
+                text-align: center;
+            }
+        }
+        &_title {
+            width: 250px;
+            display: block;
+            margin: 0 auto 25px;
+        }
+        &_tab {
+            width: fit-content;
+            margin-left: auto;
+            &_item {
+                display: flex;
+                cursor: pointer;
+                position: relative;
+                margin-bottom: 50px;
+                &.active, &:hover {
+                    .school_text_tab {
+                        &_deco, &_line {
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+            &_deco {
+                position: absolute;
+                width: 99px;
+                top: -15px;
+                left: -25px;
+                transition: $transition-common;
+                opacity: 0;
+            }
+            &_name {
+                font-size: 30px;
+                color: $secondary-500;
+                font-family: $font-serif;
+                font-weight: 700;
+                line-height: 1.2;
+            }
+            &_en {
+                font-size: 12px;
+                margin-bottom: 20px;
+                letter-spacing: 0.05em;
+            }
+            &_line {
+                width: 250px;
+                height: 2px;
+                background-color: $primary-500;
+                position: relative;
+                transition: $transition-common;
+                opacity: 0;
+                &::before {
+                    position: absolute;
+                    content: "";
+                    width: 7px;
+                    height: 7px;
+                    border-radius: 50%;
+                    background-color: $primary-500;
+                    top: 50%;
+                    left: 0;
+                    transform: translateY(-50%);
+                }
+            }
+        }
+    }
+    &_pic {
+        width: 65%;
+    }
+    &_swiper {
+        width: 100%;
+        &_item {
+            width: 100%;
+            padding-bottom: 68%;
+            position: relative;
+            >img {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                top: 0;
+                left: 0;
+            }
+        }
+    }
+    @media screen and (max-width: 1199px) {
+        >.container {
+            max-width: inherit;
+        }
+    }
+    @media screen and (max-width: 991px) {
+        >.container {
+            display: block;
+        }
+        &_text {
+            width: 100%;
+            &_tab {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                &_item {
+                    margin: 0 20px 40px;
+                }
+                &_deco {
+                    width: 74px;
+                    left: -19px;
+                }
+                &_en {
+                    margin-bottom: 10px;
+                }
+            }
+        }
+        &_pic {
+            width: 100%;
+        }
+    }
+    @media screen and (max-width: 767px) {
+        &_text {
+            &_tab {
+                &_name {
+                    font-size: 22px;
+                }
+                &_line {
+                    width: 150px;
+                }
             }
         }
     }
