@@ -30,13 +30,39 @@
 
     <main>
         <div class="kv">
-            <img class="w-100 d-md-block d-none" src="./public/img/kv_bg.png" alt="">
-            <img class="w-100 d-md-none" src="./public/img/kv-bg-m.png" alt="">
+            <img class="w-100 d-lg-block d-none" src="./public/img/kv_bg.png" alt="">
+            <img class="w-100 d-lg-none" src="./public/img/kv-bg-m.png" alt="">
             <div class="kv_text">
                 <img class="kv_logo" data-aos="fade-up" data-aos-duration="1000" src="./public/img/logo.svg" alt="">
-                <img class="kv_intro d-md-block d-none" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" src="./public/img/intro.svg" alt="">
-                <img class="kv_intro-1 d-md-none" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" src="./public/img/intro-m-1.svg" alt="">
-                <img class="kv_intro-2 d-md-none" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600" src="./public/img/intro-m-2.svg" alt="">
+                <!-- <img class="kv_intro d-md-block d-none" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" src="./public/img/intro.svg" alt=""> -->
+                <h1 class="kv_title d-lg-flex align-items-center pb-lg-0 pb-3 mb-2" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                    <div class="d-flex align-items-center">
+                        <span class="me-3">藝術之首</span>
+                        <span class="me-lg-3">美術館第一排</span>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <span class="me-lg-3">水岸公園宅</span>
+                        <div class="kv_title_divide"></div>
+                        <span class="kv_title_num">58</span>
+                        <span class="kv_title_unit">坪</span>
+                        <img class="kv_title_circle" src="./public/img/true.svg" alt="">
+                        <span class="kv_title_num">3</span>
+                        <span class="kv_title_unit">房</span>
+                    </div>
+                </h1>
+                <h2 class="kv_subtitle d-lg-flex align-items-center" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+                    <div class="kv_subtitle_top d-flex align-items-center">
+                        <span class="me-3">文發路339號</span>
+                        <span class="me-lg-3">03-2875588</span>
+                        <div class="kv_title_divide d-lg-block d-none"></div>
+                    </div>
+                    <div class="kv_subtitle_bottom d-flex align-items-center">
+                        <span class="me-3">坐擁美術館</span>
+                        <span>俯瞰青塘園</span>
+                    </div>
+                </h2>
+                <!-- <img class="kv_intro-1 d-md-none" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" src="./public/img/intro-m-1.svg" alt=""> -->
+                <!-- <img class="kv_intro-2 d-md-none" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600" src="./public/img/intro-m-2.svg" alt=""> -->
             </div>
             <img class="kv_bird kv_bird-2 d-md-block d-none" src="./public/img/bird-2.png" alt="">
             <img class="kv_bird kv_bird-1" data-aos="fade-down-left" data-aos-duration="1000" data-aos-delay="600" src="./public/img/bird-1.png" alt="">
@@ -566,17 +592,20 @@
                             <img src="./public/img/transportation-2.png" alt="">
                         </div>
                         <div class="transportation_swiper_text">
-                            <h4>
-                                <span>機捷-A18站</span>
-                                <img src="./public/img/divide.svg" alt="">
-                                <span>桃園高鐵站</span>
-                            </h4>
-                            <p>
-                                高鐵桃園站<br class="d-lg-none">
-                                <span class="d-lg-inline d-none">、</span>華泰名品城<br class="d-lg-none">
-                                <span class="d-lg-inline d-none">、</span>新光<br class="d-lg-none">
-                                <span class="d-lg-inline d-none">、</span>XPARK
-                            </p>
+                            <div class="transportation_swiper_text_inner">
+                                <h4>
+                                    <span>機捷-A18站</span>
+                                    <img src="./public/img/divide.svg" alt="">
+                                    <span>桃園高鐵站</span>
+                                </h4>
+                                <p>高鐵桃園站、華泰名品城、新光、XPARK</p>
+                                <!-- <p>
+                                    高鐵桃園站<br class="d-lg-none">
+                                    <span class="d-lg-inline d-none">、</span>華泰名品城<br class="d-lg-none">
+                                    <span class="d-lg-inline d-none">、</span>新光<br class="d-lg-none">
+                                    <span class="d-lg-inline d-none">、</span>XPARK
+                                </p> -->
+                            </div>
                         </div>
                     </div>
                     <div class="swiper-slide">
@@ -584,14 +613,16 @@
                             <img src="./public/img/transportation-1.png" alt="">
                         </div>
                         <div class="transportation_swiper_text">
-                            <h4>
-                                <span>桃園高鐵站</span>
-                            </h4>
-                            <p>
-                                串連南北<br class="d-lg-none">
-                                <span class="d-lg-inline d-none">，</span>
-                                跨區移動超便利
-                            </p>
+                            <div class="transportation_swiper_text_inner">
+                                <h4>
+                                    <span>桃園高鐵站</span>
+                                </h4>
+                                <p>
+                                    串連南北<br class="d-lg-none">
+                                    <span class="d-lg-inline d-none">，</span>
+                                    跨區移動超便利
+                                </p>
+                            </div>
                         </div>
                     </div>
                     <div class="swiper-slide">
@@ -599,18 +630,23 @@
                             <img src="./public/img/transportation-3.png" alt="">
                         </div>
                         <div class="transportation_swiper_text">
-                            <h4>
-                                <span>機捷-A19站</span>
-                                <img src="./public/img/divide.svg" alt="">
-                                <span>體育園區站</span>
-                            </h4>
-                            <p>
-                                環球購物中心<br class="d-lg-none">
-                                <span class="d-lg-inline d-none">、</span>國際棒球場<br class="d-lg-none">
-                                <span class="d-lg-inline d-none">、</span>亞洲矽谷創研中心<br class="d-lg-none">
-                                <span class="d-lg-inline d-none">、</span>桃園會展中心<br class="d-lg-none">
-                                <span class="d-lg-inline d-none">、</span>青塘園
-                            </p>
+                            <div class="transportation_swiper_text_inner">
+                                <h4>
+                                    <span>機捷-A19站</span>
+                                    <img src="./public/img/divide.svg" alt="">
+                                    <span>體育園區站</span>
+                                </h4>
+                                <p>
+                                    環球購物中心、國際棒球場、亞洲矽谷創研中心、桃園會展中心、青塘園 
+                                </p>
+                                <!-- <p>
+                                    環球購物中心<br class="d-lg-none">
+                                    <span class="d-lg-inline d-none">、</span>國際棒球場<br class="d-lg-none">
+                                    <span class="d-lg-inline d-none">、</span>亞洲矽谷創研中心<br class="d-lg-none">
+                                    <span class="d-lg-inline d-none">、</span>桃園會展中心<br class="d-lg-none">
+                                    <span class="d-lg-inline d-none">、</span>青塘園
+                                </p> -->
+                            </div>
                         </div>
                     </div>
                     <div class="swiper-slide">
@@ -624,9 +660,12 @@
                                 <span>領航站</span>
                             </h4>
                             <p>
+                                橫山書法藝術公園、大園國際雙語高中
+                            </p>
+                            <!-- <p>
                                 橫山書法藝術公園<br class="d-lg-none">
                                 <span class="d-lg-inline d-none">、</span>大園國際雙語高中
-                            </p>
+                            </p> -->
                         </div>
                     </div>
                 </div>           

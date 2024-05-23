@@ -26,6 +26,7 @@ var swiperMuseum = new Swiper(".museum_swiper", {
         delay: 5000,
         disableOnInteraction: false,
     },
+    allowTouchMove: false,
     on: {
         slideChangeTransitionStart: function() {
             if($(".museum_swiper").find(".swiper-slide-active").find(".museum_swiper_item").hasClass("pic-right")) {
@@ -52,6 +53,7 @@ var swiperNature = new Swiper(".nature_swiper", {
         disableOnInteraction: false,
     },
     speed: 800,
+    allowTouchMove: false,
 })
 
 var swiperSave = new Swiper(".save_swiper", {
@@ -82,10 +84,11 @@ var swiperLife = new Swiper(".life_swiper", {
         delay: 5000,
         disableOnInteraction: false,
     },
+    allowTouchMove: false,
 })
 
 var swiperTransportation = new Swiper(".transportation_swiper", {
-    slidesPerView: 3,
+    slidesPerView: 1,
     speed: 800,
     loop: true,
     // centeredSlides: true,
@@ -95,7 +98,7 @@ var swiperTransportation = new Swiper(".transportation_swiper", {
         prevEl: ".swiper-button-prev",
     },
     breakpoints: {
-        992: {
+        576: {
           slidesPerView: 3,
           spaceBetween: 18,
         },
@@ -117,6 +120,7 @@ var swiperSchool = new Swiper(".school_swiper", {
         delay: 5000,
         disableOnInteraction: false,
     },
+    allowTouchMove: false,
     on: {
         slideChangeTransitionStart: function() {
             let index = $(".school_swiper").find(".swiper-slide-active").index();
@@ -142,6 +146,7 @@ var swiperClassic = new Swiper(".classic_swiper", {
         delay: 5000,
         disableOnInteraction: false,
     },
+    allowTouchMove: false,
 })
 
 function sendEmail(){

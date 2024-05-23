@@ -160,6 +160,44 @@ main {
 
 .kv {
     position: relative;
+    &_title {
+        color: $secondary-500;
+        font-weight: 500;
+        font-size: 50px;
+        margin-bottom: 11.52vw;
+        // padding: 0 15px;
+        width: fit-content;
+        margin: 0 auto 11.52vw;
+        span {
+            display: block;
+            letter-spacing: 0.05em;
+        }
+        &_circle {
+            width: 50px;
+            margin: 0 5px;
+        }
+        &_divide {
+            width: 3px;
+            height: 53px;
+            background-color: $secondary-500;
+            margin: 0 20px 0 10px;
+        }
+        &_num {
+            font-size: 58px;
+            font-weight: 700;
+            letter-spacing: 0.01em;
+        }
+    }
+    &_subtitle {
+        margin: 0 auto;
+        width: fit-content;
+        span {
+            display: block;
+            font-size: 50px;
+            color: $secondary-500;
+            font-weight: 500;
+        }
+    }
     &_text {
         position: absolute;
         left: 50%;
@@ -199,7 +237,58 @@ main {
             left: 28%;
         }
     }
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 1399px) {
+        &_title {
+            font-size: 40px;
+            &_num {
+                font-size: 46px;
+            }
+            &_divide {
+                height: 45px;
+            }
+            &_circle {
+                width: 40px;
+            }
+        }
+        &_subtitle {
+            span {
+                font-size: 40px;
+            }
+        }
+    }
+    @media screen and (max-width: 991px) {
+        &_title {
+            border-bottom: 2px solid $secondary-500;
+            &_num {
+                font-size: 44px;
+            }
+            &_unit {
+                font-size: 36px;
+            }
+            &_divide {
+                height: 40px;
+                margin: 0 15px 0 10px;
+            }
+            &_circle {
+                width: 35px;
+            }
+        }
+        &_subtitle {
+            span {
+                font-size: 38px;
+            }
+            &_top {
+                width: fit-content;
+                margin: 0 auto 44px;
+            }
+            &_bottom {
+                span {
+                    font-size: 32px;
+                }
+                width: fit-content;
+                margin: 0 auto;
+            }
+        }
         &_logo {
             width: 56.19%;
             margin-bottom: 11.52vw;
@@ -211,6 +300,65 @@ main {
         }
         &_text {
             top: 25%;
+        }
+    }
+    @media screen and (max-width: 575px) {
+        &_title {
+            font-size: 34px;
+            span {
+                letter-spacing: 0.02em;
+            }
+            &_num {
+                font-size: 36px;
+            }
+            &_unit {
+                font-size: 30px;
+            }
+            &_divide {
+                height: 33px;
+                margin: 0 15px 0 10px;
+            }
+            &_circle {
+                width: 28px;
+            }
+        }
+        &_subtitle {
+            span {
+                font-size: 31px;
+            }
+            &_bottom {
+                span {
+                    font-size: 25px;
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 400px) {
+        &_title {
+            font-size: 26px;
+            &_num {
+                font-size: 27px;
+            }
+            &_unit {
+                font-size: 23px;
+            }
+            &_divide {
+                height: 24px;
+                margin: 0 10px 0 10px;
+            }
+            &_circle {
+                width: 21px;
+            }
+        }
+        &_subtitle {
+            span {
+                font-size: 23px;
+            }
+            &_bottom {
+                span {
+                    font-size: 18px;
+                }
+            }
         }
     }
 }
@@ -226,7 +374,7 @@ main {
             h2 {
                 color: $secondary-500;
                 font-family: $font-serif;
-                font-size: 40px;
+                font-size: 36px;
                 font-weight: 700;
                 margin: 0;
                 letter-spacing: 0.2em;
@@ -295,7 +443,7 @@ main {
                 font-family: $font-serif;
                 font-weight: 700;
                 margin-bottom: 10px;
-                letter-spacing: 0.35em;
+                letter-spacing: 0.3em;
                 color: $secondary-500;
                 &::before {
                     position: absolute;
@@ -375,6 +523,12 @@ main {
         width: 14.7%;
         top: 12%;
         left: 8%;
+    }
+    &_pic {
+        >.container {
+            max-width: 1500px;
+        }
+        
     }
     @media screen and (max-width: 1700px) {
         &_bird {
@@ -1171,7 +1325,7 @@ main {
             transition: $transition-common;
         }
         &_text {
-            padding: 20px;
+            padding: 20px 30px;
             h4 {
                 display: flex;
                 flex-wrap: wrap;
@@ -1208,6 +1362,10 @@ main {
                     left: 0;
                 }
             }
+            &_inner {
+                width: fit-content;
+                margin: 0 auto;
+            }
         }
         .swiper-button-next, .swiper-button-prev {
             width: 57px;
@@ -1235,6 +1393,7 @@ main {
     @media screen and (max-width: 1350px) {
         &_swiper {
             &_text {
+                padding: 20px;
                 h4 {
                     span {
                         font-size: 28px;
@@ -1269,11 +1428,11 @@ main {
                     font-size: 16px;
                     padding-left: 10px;
                     line-height: 1.6;
-                    &::before {
-                        height: 20px;
-                        width: 2px;
-                        top: 3px;
-                    }
+                    // &::before {
+                    //     height: 20px;
+                    //     width: 2px;
+                    //     top: 3px;
+                    // }
                 }
             }
             .swiper-button-next, .swiper-button-prev {
@@ -1294,34 +1453,42 @@ main {
             margin-bottom: 50px;
         }
         &_swiper {
-            &_text {
-                padding: 10px;
-                h4 {
-                    span {
-                        font-size: 20px;
-                    }
-                }
-                p {
-                    font-size: 14px;
-                }
-            }
+            // &_text {
+            //     padding: 10px;
+            //     h4 {
+            //         span {
+            //             font-size: 20px;
+            //         }
+            //     }
+            //     p {
+            //         font-size: 14px;
+            //     }
+            // }
             .swiper-button-next, .swiper-button-prev {
                 top: calc((100% - 224px) / 2);
             }
         }
     }
+    @media screen and (max-width: 575px) {
+        .swiper-button-next {
+            right: 20px;
+        }
+        .swiper-button-prev {
+            left: 20px;
+        }
+    }
     @media screen and (max-width: 450px) {
         &_swiper {
             &_text {
-                padding: 5px;
-                h4 {
-                    span {
-                        font-size: 16px;
-                    }
-                }
-                p {
-                    font-size: 12px;
-                }
+                // padding: 5px;
+                // h4 {
+                //     span {
+                //         font-size: 16px;
+                //     }
+                // }
+                // p {
+                //     font-size: 12px;
+                // }
             }
             .swiper-button-next, .swiper-button-prev {
                 top: calc((100% - 199px) / 2);

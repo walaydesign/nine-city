@@ -180,6 +180,54 @@ main {
   position: relative;
 }
 
+.kv_title {
+  color: #123738;
+  font-weight: 500;
+  font-size: 50px;
+  margin-bottom: 11.52vw;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto 11.52vw;
+}
+
+.kv_title span {
+  display: block;
+  letter-spacing: 0.05em;
+}
+
+.kv_title_circle {
+  width: 50px;
+  margin: 0 5px;
+}
+
+.kv_title_divide {
+  width: 3px;
+  height: 53px;
+  background-color: #123738;
+  margin: 0 20px 0 10px;
+}
+
+.kv_title_num {
+  font-size: 58px;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+.kv_subtitle {
+  margin: 0 auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.kv_subtitle span {
+  display: block;
+  font-size: 50px;
+  color: #123738;
+  font-weight: 500;
+}
+
 .kv_text {
   position: absolute;
   left: 50%;
@@ -229,7 +277,59 @@ main {
   left: 28%;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1399px) {
+  .kv_title {
+    font-size: 40px;
+  }
+  .kv_title_num {
+    font-size: 46px;
+  }
+  .kv_title_divide {
+    height: 45px;
+  }
+  .kv_title_circle {
+    width: 40px;
+  }
+  .kv_subtitle span {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .kv_title {
+    border-bottom: 2px solid #123738;
+  }
+  .kv_title_num {
+    font-size: 44px;
+  }
+  .kv_title_unit {
+    font-size: 36px;
+  }
+  .kv_title_divide {
+    height: 40px;
+    margin: 0 15px 0 10px;
+  }
+  .kv_title_circle {
+    width: 35px;
+  }
+  .kv_subtitle span {
+    font-size: 38px;
+  }
+  .kv_subtitle_top {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 0 auto 44px;
+  }
+  .kv_subtitle_bottom {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 0 auto;
+  }
+  .kv_subtitle_bottom span {
+    font-size: 32px;
+  }
   .kv_logo {
     width: 56.19%;
     margin-bottom: 11.52vw;
@@ -239,6 +339,59 @@ main {
   }
   .kv_text {
     top: 25%;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .kv_title {
+    font-size: 34px;
+  }
+  .kv_title span {
+    letter-spacing: 0.02em;
+  }
+  .kv_title_num {
+    font-size: 36px;
+  }
+  .kv_title_unit {
+    font-size: 30px;
+  }
+  .kv_title_divide {
+    height: 33px;
+    margin: 0 15px 0 10px;
+  }
+  .kv_title_circle {
+    width: 28px;
+  }
+  .kv_subtitle span {
+    font-size: 31px;
+  }
+  .kv_subtitle_bottom span {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .kv_title {
+    font-size: 26px;
+  }
+  .kv_title_num {
+    font-size: 27px;
+  }
+  .kv_title_unit {
+    font-size: 23px;
+  }
+  .kv_title_divide {
+    height: 24px;
+    margin: 0 10px 0 10px;
+  }
+  .kv_title_circle {
+    width: 21px;
+  }
+  .kv_subtitle span {
+    font-size: 23px;
+  }
+  .kv_subtitle_bottom span {
+    font-size: 18px;
   }
 }
 
@@ -258,7 +411,7 @@ main {
 .museum_text_title h2 {
   color: #123738;
   font-family: "Noto Serif TC", sans-serif;
-  font-size: 40px;
+  font-size: 36px;
   font-weight: 700;
   margin: 0;
   letter-spacing: 0.2em;
@@ -343,7 +496,7 @@ main {
   font-family: "Noto Serif TC", sans-serif;
   font-weight: 700;
   margin-bottom: 10px;
-  letter-spacing: 0.35em;
+  letter-spacing: 0.3em;
   color: #123738;
 }
 
@@ -439,6 +592,10 @@ main {
   width: 14.7%;
   top: 12%;
   left: 8%;
+}
+
+.museum_pic > .container {
+  max-width: 1500px;
 }
 
 @media screen and (max-width: 1700px) {
@@ -1280,7 +1437,7 @@ main {
 }
 
 .transportation_swiper_text {
-  padding: 20px;
+  padding: 20px 30px;
 }
 
 .transportation_swiper_text h4 {
@@ -1328,6 +1485,13 @@ main {
   left: 0;
 }
 
+.transportation_swiper_text_inner {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+}
+
 .transportation_swiper .swiper-button-next, .transportation_swiper .swiper-button-prev {
   width: 57px;
   height: 133px;
@@ -1356,6 +1520,9 @@ main {
 }
 
 @media screen and (max-width: 1350px) {
+  .transportation_swiper_text {
+    padding: 20px;
+  }
   .transportation_swiper_text h4 span {
     font-size: 28px;
   }
@@ -1390,11 +1557,6 @@ main {
     padding-left: 10px;
     line-height: 1.6;
   }
-  .transportation_swiper_text p::before {
-    height: 20px;
-    width: 2px;
-    top: 3px;
-  }
   .transportation_swiper .swiper-button-next, .transportation_swiper .swiper-button-prev {
     width: 30px;
     height: 50px;
@@ -1412,30 +1574,21 @@ main {
   .transportation .museum_text {
     margin-bottom: 50px;
   }
-  .transportation_swiper_text {
-    padding: 10px;
-  }
-  .transportation_swiper_text h4 span {
-    font-size: 20px;
-  }
-  .transportation_swiper_text p {
-    font-size: 14px;
-  }
   .transportation_swiper .swiper-button-next, .transportation_swiper .swiper-button-prev {
     top: calc((100% - 224px) / 2);
   }
 }
 
+@media screen and (max-width: 575px) {
+  .transportation .swiper-button-next {
+    right: 20px;
+  }
+  .transportation .swiper-button-prev {
+    left: 20px;
+  }
+}
+
 @media screen and (max-width: 450px) {
-  .transportation_swiper_text {
-    padding: 5px;
-  }
-  .transportation_swiper_text h4 span {
-    font-size: 16px;
-  }
-  .transportation_swiper_text p {
-    font-size: 12px;
-  }
   .transportation_swiper .swiper-button-next, .transportation_swiper .swiper-button-prev {
     top: calc((100% - 199px) / 2);
   }
