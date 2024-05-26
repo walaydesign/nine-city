@@ -11,12 +11,52 @@ $(".btn-top").click(function(){
     $("html, body").animate({scrollTop: 0},300);
 })
 
-var swiperMuseum = new Swiper(".museum_swiper", {
+
+
+var swiperMuseumPic = new Swiper(".museum_swiper-pic", {
     slidesPerView: 1,
-    scrollbar: {
-        el: ".swiper-pagination",
+    speed: 800,
+    autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+    },
+    loop: true,
+    allowTouchMove: false,
+    navigation: {
+        nextEl: "#museum_swiper_next",
+        prevEl: "#museum_swiper_prev",
+    },
+    pagination: {
+        el: "#museum_swiper_pagination",
         clickable: true,
     },
+})
+
+var swiperMuseumText = new Swiper(".museum_swiper-text", {
+    slidesPerView: 1,
+    navigation: {
+        nextEl: "#museum_swiper_next",
+        prevEl: "#museum_swiper_prev",
+    },
+    speed: 800,
+    autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+    },
+    pagination: {
+        el: "#museum_swiper_pagination",
+        clickable: true,
+    },
+    loop: true,
+    allowTouchMove: false,
+})
+
+var swiperMuseum = new Swiper(".museum_swiper", {
+    slidesPerView: 1,
+    // scrollbar: {
+    //     el: ".swiper-pagination",
+    //     clickable: true,
+    // },
     navigation: {
         nextEl: ".swiper-next",
         prevEl: ".swiper-prev",
@@ -26,16 +66,59 @@ var swiperMuseum = new Swiper(".museum_swiper", {
         delay: 5000,
         disableOnInteraction: false,
     },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    loop: true,
     allowTouchMove: false,
-    on: {
-        slideChangeTransitionStart: function() {
-            if($(".museum_swiper").find(".swiper-slide-active").find(".museum_swiper_item").hasClass("pic-right")) {
-                $(".museum_swiper").find(".swiper_nav").removeClass("leftside").addClass("rightside");
-            }else if($(".museum_swiper").find(".swiper-slide-active").find(".museum_swiper_item").hasClass("pic-left")) {
-                $(".museum_swiper").find(".swiper_nav").removeClass("rightside").addClass("leftside");
-            }
-        },
-    }
+    // on: {
+    //     slideChangeTransitionStart: function() {
+    //         if($(".museum_swiper").find(".swiper-slide-active").find(".museum_swiper_item").hasClass("pic-right")) {
+    //             $(".museum_swiper").find(".swiper_nav").removeClass("leftside").addClass("rightside");
+    //         }else if($(".museum_swiper").find(".swiper-slide-active").find(".museum_swiper_item").hasClass("pic-left")) {
+    //             $(".museum_swiper").find(".swiper_nav").removeClass("rightside").addClass("leftside");
+    //         }
+    //     },
+    // }
+})
+
+var swiperNaturePic = new Swiper(".nature_swiper-pic", {
+    slidesPerView: 1,
+    speed: 800,
+    autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+    },
+    loop: true,
+    navigation: {
+        nextEl: "#nature-next",
+        prevEl: "#nature-prev",
+    },
+    pagination: {
+        el: "#nature-pagination",
+        clickable: true,
+    },
+    allowTouchMove: false,
+})
+
+var swiperNatureText = new Swiper(".nature_swiper-text", {
+    slidesPerView: 1,
+    navigation: {
+        nextEl: "#nature-next",
+        prevEl: "#nature-prev",
+    },
+    speed: 800,
+    autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+    },
+    pagination: {
+        el: "#nature-pagination",
+        clickable: true,
+    },
+    loop: true,
+    allowTouchMove: false,
 })
 
 var swiperNature = new Swiper(".nature_swiper", {
@@ -44,14 +127,19 @@ var swiperNature = new Swiper(".nature_swiper", {
         nextEl: ".swiper-next",
         prevEl: ".swiper-prev",
     },
-    scrollbar: {
+    // scrollbar: {
+    //     el: ".swiper-pagination",
+    //     clickable: true,
+    // },
+    pagination: {
         el: ".swiper-pagination",
         clickable: true,
     },
-    autoplay: {
-        delay: 5000,
-        disableOnInteraction: false,
-    },
+    loop: true,
+    // autoplay: {
+    //     delay: 5000,
+    //     disableOnInteraction: false,
+    // },
     speed: 800,
     allowTouchMove: false,
 })
@@ -69,16 +157,59 @@ var swiperSave = new Swiper(".save_swiper", {
     },
 })
 
+var swiperLifePic = new Swiper(".life_swiper-pic", {
+    slidesPerView: 1,
+    speed: 800,
+    autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+    },
+    loop: true,
+    navigation: {
+        nextEl: "#life-next",
+        prevEl: "#life-prev",
+    },
+    pagination: {
+        el: "#life-pagination",
+        clickable: true,
+    },
+    allowTouchMove: false,
+})
+
+var swiperLifeText = new Swiper(".life_swiper-text", {
+    slidesPerView: 1,
+    navigation: {
+        nextEl: "#life-next",
+        prevEl: "#life-prev",
+    },
+    speed: 800,
+    autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+    },
+    pagination: {
+        el: "#life-pagination",
+        clickable: true,
+    },
+    loop: true,
+    allowTouchMove: false,
+})
+
 var swiperLife = new Swiper(".life_swiper", {
     slidesPerView: 1,
     navigation: {
         nextEl: ".swiper-next",
         prevEl: ".swiper-prev",
     },
-    scrollbar: {
+    // scrollbar: {
+    //     el: ".swiper-pagination",
+    //     clickable: true,
+    // },
+    pagination: {
         el: ".swiper-pagination",
         clickable: true,
     },
+    loop: true,
     speed: 800,
     autoplay: {
         delay: 5000,
@@ -111,10 +242,15 @@ var swiperSchool = new Swiper(".school_swiper", {
         nextEl: ".swiper-next",
         prevEl: ".swiper-prev",
     },
-    scrollbar: {
+    // scrollbar: {
+    //     el: ".swiper-pagination",
+    //     clickable: true,
+    // },
+    pagination: {
         el: ".swiper-pagination",
         clickable: true,
     },
+    loop: true,
     speed: 800,
     autoplay: {
         delay: 5000,
@@ -147,6 +283,7 @@ var swiperClassic = new Swiper(".classic_swiper", {
         disableOnInteraction: false,
     },
     allowTouchMove: false,
+    loop: true,
 })
 
 function sendEmail(){
