@@ -290,7 +290,7 @@ function sendEmail(){
     Email.send({
         SecureToken: "8207c7d7-4a6c-4797-870d-d16ee71023ce",
         // To : "ryanlin9001@gmail.com, zhulixdesign@gmail.com, zhuli705098@gmail.com",
-        To : "yl301114@gmail.com",
+        To : "zhulixdesign@gmail.com, zhuleservice@gmail.com",
         From : "walayydesign@gmail.com",
         Subject : "玖都預約賞屋",
         Body : "貴賓稱謂:" + document.getElementById("name").value
