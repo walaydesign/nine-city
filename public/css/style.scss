@@ -1204,6 +1204,15 @@ main {
             .swiper-slide {
                 padding: 0;
             }
+            p {
+                position: absolute;
+                font-size: 13px;
+                color: #fff;
+                right: 10px;
+                bottom: 10px;
+                margin: 0;
+                text-shadow: 0 2px 8px rgba(0,0,0,0.2);
+            }
         }
         &_text {
             h3 {
@@ -1352,6 +1361,15 @@ main {
                 object-fit: cover;
                 top: 0;
                 left: 0;
+            }
+            p {
+                position: absolute;
+                font-size: 13px;
+                color: #fff;
+                right: 10px;
+                bottom: 10px;
+                margin: 0;
+                text-shadow: 0 2px 8px rgba(0,0,0,0.2);
             }
             &:hover {
                 .life_swiper_mask {
@@ -1900,8 +1918,15 @@ main {
                     font-size: 18px;
                     margin: 0 auto;
                     letter-spacing: 0.08em;
-                    width: 90%;
+                    // width: 90%;
+                    width: fit-content;
                     text-align: justify;
+                }
+                &.secret {
+                    width: 80%;
+                }
+                &.hall {
+                    width: 60%;
                 }
             }
             &_pic {
@@ -1990,8 +2015,15 @@ main {
                 &_text {
                     width: 50%;
                     order: 2;
-                    margin: 0;
+                    margin: 0 auto;
                     padding: 0 15px;
+                    &.hall {
+                        width: 50%;
+                        p {
+                            width: fit-content;
+                            margin: 0 auto;
+                        }
+                    }
                 }
                 &_pic {
                     width: 50%;
@@ -2258,6 +2290,11 @@ main {
         &_label {
             width: 100px;
         }
+        &_title {
+            h2 {
+                margin:0;
+            }
+        }
         &_text {
             font-size: 18px;
             text-align: left;
@@ -2293,6 +2330,7 @@ main {
     &_inform {
         margin: 0 auto;
         width: fit-content;
+        padding-bottom: 30px;
         >ul {
             &:first-child {
                 margin-right: 70px;

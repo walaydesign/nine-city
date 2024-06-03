@@ -11,8 +11,6 @@ $(".btn-top").click(function(){
     $("html, body").animate({scrollTop: 0},300);
 })
 
-
-
 var swiperMuseumPic = new Swiper(".museum_swiper-pic", {
     slidesPerView: 1,
     speed: 800,
@@ -201,10 +199,6 @@ var swiperLife = new Swiper(".life_swiper", {
         nextEl: ".swiper-next",
         prevEl: ".swiper-prev",
     },
-    // scrollbar: {
-    //     el: ".swiper-pagination",
-    //     clickable: true,
-    // },
     pagination: {
         el: ".swiper-pagination",
         clickable: true,
@@ -222,7 +216,6 @@ var swiperTransportation = new Swiper(".transportation_swiper", {
     slidesPerView: 1,
     speed: 800,
     loop: true,
-    // centeredSlides: true,
     spaceBetween: 10,
     navigation: {
         nextEl: ".swiper-button-next",
@@ -242,10 +235,6 @@ var swiperSchool = new Swiper(".school_swiper", {
         nextEl: ".swiper-next",
         prevEl: ".swiper-prev",
     },
-    // scrollbar: {
-    //     el: ".swiper-pagination",
-    //     clickable: true,
-    // },
     pagination: {
         el: ".swiper-pagination",
         clickable: true,
@@ -289,7 +278,6 @@ var swiperClassic = new Swiper(".classic_swiper", {
 function sendEmail(){
     Email.send({
         SecureToken: "8207c7d7-4a6c-4797-870d-d16ee71023ce",
-        // To : "ryanlin9001@gmail.com, zhulixdesign@gmail.com, zhuli705098@gmail.com",
         To : "zhulixdesign@gmail.com, zhuleservice@gmail.com, spdnbhj@gmail.com",
         From : "walayydesign@gmail.com",
         Subject : "玖都預約賞屋",
