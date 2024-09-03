@@ -278,7 +278,8 @@ var swiperClassic = new Swiper(".classic_swiper", {
 function sendEmail(){
     Email.send({
         SecureToken: "8207c7d7-4a6c-4797-870d-d16ee71023ce",
-        To : "zhulixdesign@gmail.com, zhuleservice@gmail.com, spdnbhj@gmail.com",
+        To : "yl301114@gmail.com",
+        // To : "zhulixdesign@gmail.com, zhuleservice@gmail.com, spdnbhj@gmail.com",
         From : "walayydesign@gmail.com",
         Subject : "玖都預約賞屋",
         Body : "貴賓稱謂:" + document.getElementById("name").value
